@@ -12,6 +12,7 @@ namespace Book.API.Controllers
         {
             BookService = bookService;
         }
+        [HttpGet]
         public ActionResult Get(string isbn)
         {
             var book = BookService.GetBookByISBN(isbn);

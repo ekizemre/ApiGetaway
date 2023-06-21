@@ -12,6 +12,7 @@ namespace User.API.Controllers
         {
             UserService = userService;
         }
+        [HttpPost]
         public ActionResult Get(string username)
         {
             var dto = UserService.GetUserByUsername(username);
